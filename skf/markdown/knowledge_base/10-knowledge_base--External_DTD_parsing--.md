@@ -3,7 +3,7 @@
 
 ## Description:
 
-Processing of an external entity containing tainted data may lead to disclosure of
+Processing of an external entity containing tainted data may lead to the disclosure of
 confidential information and other system impacts.
 The XML 1.0 standard defines the structure of an XML document.
 The standard defines a concept called an entity, which is a storage unit of some type.
@@ -23,7 +23,7 @@ using file: schemes or relative paths in the system identifier.
 Since the attack occurs relative to the application processing the XML document,
 an attacker may use this trusted application to pivot to other internal systems,
 possibly disclosing other internal content
-via http(s) requests. In some situations, an XML processor library that is vulnerable
+via HTTP(s) requests. In some situations, an XML processor library that is vulnerable
 to client-side memory corruption issues may be exploited by dereferencing a malicious URI,
 possibly allowing arbitrary code execution under the application account. Other attacks
 can access local resources that may not stop returning data, possibly impacting application
